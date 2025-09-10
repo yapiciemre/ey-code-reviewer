@@ -1,28 +1,28 @@
 # EY Code Reviewer
 
-![EY Code Reviewer Logo](components\docs\logo.png)
+![EY Code Reviewer Logo](components/docs/logo.png)
 
 **EY Code Reviewer** is an AI-powered code analysis tool that acts as an automated teammate, providing instant, expert-level, and highly-structured feedback on your code. Built with React, TypeScript, and the power of Google's Gemini API, this application helps developers accelerate their workflow and improve code quality by providing a comprehensive review that goes far beyond simple suggestions.
 
 ## Simple Example & Tabbed Interface Structure Screenshots
 
 ### **Analyzing Part**
-![Application Screenshot](components\docs\1-Analyzing.png)
+![Application Screenshot](components/docs/1-Analyzing.png)
 
 ### **Analysis Tab**
-![Application Screenshot](components\docs\2-Analysis.png)
+![Application Screenshot](components/docs/2-Analysis.png)
 
 ### **Refactored Code Tab**
-![Application Screenshot](components\docs\3-RefactoredCode.png)
+![Application Screenshot](components/docs/3-RefactoredCode.png)
 
 ### **Minimal Diff Tab**
-![Application Screenshot](components\docs\4-MinimalDiff.png)
+![Application Screenshot](components/docs/4-MinimalDiff.png)
 
 ### **Tests Tab**
-![Application Screenshot](components\docs\5-Tests.png)
+![Application Screenshot](components/docs/5-Tests.png)
 
 ### **TODO Tab**
-![Application Screenshot](components\docs\6-TODO.png)
+![Application Screenshot](components/docs/6-TODO.png)
 
 ## About The Project
 
