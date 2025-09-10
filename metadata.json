@@ -1,0 +1,5 @@
+{
+  "name": "EY Code Reviewer",
+  "description": "An AI-powered tool that uses the Gemini API to provide expert code reviews. Paste your code, select the language, and receive instant feedback on bugs, performance, readability, and best practices.",
+  "requestFramePermissions": []
+}

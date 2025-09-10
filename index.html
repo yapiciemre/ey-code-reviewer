@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EY Code Reviewer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" />
+    <style>
+      /* Custom Scrollbar for a more integrated look */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0D1117;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #30363D;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #444c56;
+      }
+      /* Style for react-simple-code-editor */
+      .code-editor-wrapper {
+        position: relative;
+        flex-grow: 1;
+        overflow: auto;
+      }
+      .code-editor-wrapper pre {
+        outline: none !important;
+        padding: 1rem !important;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-bg': '#0D1117',
+              'brand-surface': '#161B22',
+              'brand-border': '#30363D',
+              'brand-primary': '#58A6FF',
+              'brand-primary-hover': '#79C0FF',
+              'brand-secondary': '#8B949E',
+              'brand-text': '#C9D1D9',
+              'brand-text-light': '#8B949E',
+            },
+            fontFamily: {
+               sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+               mono: ['SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo', 'monospace'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            },
+            // For prose plugin
+            typography: ({ theme }) => ({
+              invert: {
+                css: {
+                  '--tw-prose-body': theme('colors.brand-text-light'),
+                  '--tw-prose-headings': theme('colors.brand-text'),
+                  '--tw-prose-lead': theme('colors.brand-text-light'),
+                  '--tw-prose-links': theme('colors.brand-primary'),
+                  '--tw-prose-bold': theme('colors.brand-text'),
+                  '--tw-prose-counters': theme('colors.brand-secondary'),
+                  '--tw-prose-bullets': theme('colors.brand-border'),
+                  '--tw-prose-hr': theme('colors.brand-border'),
+                  '--tw-prose-quotes': theme('colors.brand-text'),
+                  '--tw-prose-quote-borders': theme('colors.brand-border'),
+                  '--tw-prose-captions': theme('colors.brand-secondary'),
+                  '--tw-prose-code': theme('colors.amber[300]'),
+                  '--tw-prose-pre-code': theme('colors.brand-text-light'),
+                  '--tw-prose-pre-bg': theme('colors.brand-bg'),
+                  '--tw-prose-th-borders': theme('colors.brand-border'),
+                  '--tw-prose-td-borders': theme('colors.brand-border'),
+                },
+              },
+            }),
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0",
+    "react-simple-code-editor": "https://esm.sh/react-simple-code-editor@0.13.1",
+    "prismjs": "https://esm.sh/prismjs@1.29.0",
+    "prismjs/": "https://esm.sh/prismjs@1.29.0/",
+    "react-markdown": "https://esm.sh/react-markdown@9.0.1?external=react,prop-types",
+    "remark-gfm": "https://esm.sh/remark-gfm@4.0.0",
+    "react-syntax-highlighter": "https://esm.sh/react-syntax-highlighter@15.5.0",
+    "react-syntax-highlighter/dist/esm/styles/prism": "https://esm.sh/react-syntax-highlighter@15.5.0/dist/esm/styles/prism",
+    "prop-types": "https://esm.sh/prop-types@15.8.1",
+    "react-syntax-highlighter/": "https://aistudiocdn.com/react-syntax-highlighter@^15.6.6/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-bg">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
